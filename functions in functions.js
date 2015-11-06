@@ -1,4 +1,5 @@
-var calcLog = [];
+(function (window){
+    var calcLog = [];
 
 function calcFactory(symbol) {
     
@@ -35,3 +36,8 @@ function calcFactory(symbol) {
         default:return unknown
     }
 }
+//to export only calcFactory in global scope
+window.calcFactory = calcFactory;
+
+})(window);
+
