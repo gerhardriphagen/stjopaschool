@@ -1,3 +1,4 @@
+//THIS IS A TEST OBJECT
 var obj = {
     a: 1,
     b: 'string',
@@ -22,6 +23,7 @@ var obj = {
 };
 
 
+
 var objectParser = function(obj) {
 
     var counter = {
@@ -33,6 +35,7 @@ var objectParser = function(obj) {
         arraysNumber: 0,
         datesNumber: 0
     };
+
 
     recursiveObject = function(obj) {
         for (var prop in obj) {
@@ -73,7 +76,18 @@ var objectParser = function(obj) {
 
     recursiveObject(obj);
 
-    return counter;
-};
 
-objectParser(obj);
+    function printObject(o) {
+        var out = '';
+        for (var p in o) {
+            out += p + ': ' + o[p] + '\n';
+        }
+        alert(out);
+    }
+
+
+    document.getElementById('returnObject').value = printObject(counter);
+
+    console.log(counter)
+
+};
