@@ -7,11 +7,15 @@
 <body>
 
 
+
+
 <form name="myForm">
-    <input type="text" name="myObject">
-    <input type="button" value="Submit" onClick="objectParser(document.myForm.myObject.value)">
-    <input type="text" id="returnObject" name="output" value="">
+    <textarea rows="30" name="myObject"></textarea>
+    <input type="button" value="Submit" onClick="objectParser(JSON.parse(document.myForm.myObject.value))">
+    <textarea rows="30" id="returnObject" name="output" value=""></textarea>
 </form>
+
+
 
 
 </body>

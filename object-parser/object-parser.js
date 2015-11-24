@@ -1,20 +1,20 @@
 //THIS IS A TEST OBJECT
 var obj = {
-    a: 1,
-    b: 'string',
-    c: [1,2,'wwer',4],
-    d: true,
-    e: {
-        f: 1,
-        g: 'fsdfs',
-        h: [1,2,3],
-        i: {
-            j: 1,
-            k: "1212313",
-            z: {
-                x: 'afdfsdasadf',
-                y: new Date(11,11,11),
-                u: function(){
+    "a": 1,
+    "b": "string",
+    "c": [1,2,"wwer",4],
+    "d": true,
+    "e": {
+        "f": 1,
+        "g": "fsdfs",
+        "h": [1,2,3],
+        "i": {
+            "j": 1,
+            "k": "1212313",
+            "z": {
+                "x": "afdfsdasadf",
+                "y": new Date(11,11,11),
+                "u": function(){
                     console.log('function')
                 }
             }
@@ -82,11 +82,12 @@ var objectParser = function(obj) {
         for (var p in o) {
             out += p + ': ' + o[p] + '\n';
         }
-        alert(out);
+        return out;
     }
 
 
     document.getElementById('returnObject').value = printObject(counter);
+
 
     console.log(counter)
 
