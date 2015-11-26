@@ -12,11 +12,7 @@ var obj = {
             "j": 1,
             "k": "1212313",
             "z": {
-                "x": "afdfsdasadf",
-                "y": new Date(11,11,11),
-                "u": function(){
-                    console.log('function')
-                }
+                "x": "afdfsdasadf"
             }
         }
     }
